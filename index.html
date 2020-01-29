@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"/>
+	<link rel="stylesheet"  href="style.css"/>
 </head>
 
 <body>
-	<link rel="stylesheet"  href="style.css"/>
-	<h1 class="instruction"> Secure Messaging App</h1>
-	<p>Please, enter a message:</p>
 
+	<div class="center">
+		<h1 class="instruction"> Secure Messaging App</h1>
+		<p>Please, enter a message:</p>
+		<input type="text" value="" id="myInput"><br>
+		<button>ENTER</button>
+		<button onclick="document.getElementById('myInput').value = ''">RESET</button>
+	</div>
+	
 
-	<input type="text" value="" id="myInput"><br>
-	<button>ENTER</button>
-	<button onclick="document.getElementById('myInput').value = ''">RESET</button>
-    </form>
 	<script src="index.js"></script>
 </body>
 </html>

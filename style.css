@@ -3,6 +3,14 @@ body {
 	background-color: aquamarine;
 }
 
-/* p.instruction {
+/* .instruction {
 	font-weight: bold;
 } */
+
+.center {
+	margin: auto;
+	width: 50%;
+	text-align:center;
+	/* border: 3px solid green; */
+	padding: 150px;
+  }
