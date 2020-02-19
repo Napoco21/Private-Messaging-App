@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"/>
-	<link rel="stylesheet"  href="style.css"/>
-</head>
+	<head>
+		<link rel="stylesheet"  href="style.css"/>
+	</head>
 
-<body>
+	<body>
+			<div class="center">
+				<div id="final_message">
+					<h1></h1>
+					<div>
+						<a href="./index.html"> Write a message</a>
+					</div>
+				</div>
 
-	<div class="center">
-		<h1 class="instruction"> Secure Messaging App</h1>
-		<p>Please, enter a message:</p>
-		<input type="text" value="" id="myInput"><br>
-		<button>ENTER</button>
-		<button onclick="document.getElementById('myInput').value = ''">RESET</button>
-	</div>
-	
+				<h1 class="app_title"> Private Messaging App</h1>
+				<p id="instruction">Please, enter a message:</p>
 
-	<script src="index.js"></script>
-</body>
+	    <div id="unencrypted-div">
+				<form>
+					<textarea type="text" value="" id="unencrypted" rows="10" cols="50"></textarea>
+					<br> <br>
+					<button onclick="document.querySelector('#share_msg').innerHTML = 'Share the link'" id="enter">ENTER</button>
+					<button onclick="document.getElementById('unencrypted').value = ''">RESET</button>
+			 </form>
+		 </div>
+
+		 <br><br><br>
+		 <p id="share_msg"></p>
+		 <div style="display:none" id="encrypted-div">
+			 <textarea type="text" value="" id="encrypted" rows="3" cols="80"></textarea>
+		 </div>
+	  </div>		
+		<script src="index.js"></script>
+	</body>
 </html>
